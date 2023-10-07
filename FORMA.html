@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <div>
+        <a class="boton_de_gomita" href="Index.html">Regresar al Inicio</a>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Beca</title>
+</head>
+<body>
+    <section class="cabeza2">
+        <div class="banner2">
+            <header class="header">
+                    <h1>Solicitud de Beca</h1>
+                    <img class="header__logo2" src="INBAL.png" alt="logotipo">     
+            </header>
+        </div>
+    </section>
+    <section class="Mensaje">
+        <h1>Becas INBAL 2018</h1>
+        <p>
+            Previo al llenado de esta solicitud es obligatorio que las y los aspirantes den lectura a las Reglas de Operación del Programa Nacional de Becas S243 (Secretaría  de Cultura), las cuales pueden consultarse en el siguiente vínculo web oficial: http://bit.ly/dof_programa_becas. Los planteles educativos cuentan con un  ejemplar para consulta de las y los interesados en la biblioteca y el área de control escolar de la institución. Asimismo, deberán atender a los avisos e información  general que se publiquen en la página de internet: http://www.gob.mx/cultura/inba  
+El Instituto Nacional de Bellas Artes y Literatura (INBA), a través de la Subdirección General de Educación e Investigación Artísticas (SGEIA), con domicilio en  calle Londres núm. 16, col. Juárez, del. Cuauhtémoc, C. P. 06600, Ciudad de México, utilizará sus datos personales recabados para el Registro en el Padrón de  Solicitudes de Beca INBA, asignación de número de folio, revisión y autenticación de los diversos documentos solicitados para la participación, y en caso de  resultar becario seleccionado, para el proceso de integración del Padrón de Beneficiarios del Sistema integral de Información de Padrones de Programas  Gubernamentales (SIIPP-G). En el caso de menores de edad, se podrán solicitar datos de identificación y contacto del padre, madre o tutor. 
+Para mayor información acerca del tratamiento y de los derechos que puede hacer valer, puede acceder al aviso de privacidad integral a través del portal de la  SGEIA en la liga: http://www.inba.gob.mx/multimedia/convocatorias/2018/422-aviso_privacidad_becas_inba.pdf 
+
+        </p>
+    </section>
+    <section class="Fotmat">
+        <h1>Información General</h1>
+        <form method="post">
+            <legend></legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required>
+        
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text" id="nacionalidad" name="nacionalidad" required>
+        
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+        
+            <label for="estadoCivil">Estado Civil:</label>
+            <select id="estadoCivil" name="estadoCivil">
+                <option value="soltero">Soltero/a</option>
+                <option value="casado">Casado/a</option>
+                <option value="divorciado">Divorciado/a</option>
+                <option value="viudo">Viudo/a</option>
+            </select>
+        
+            <label>Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="sexo" value="femenino">
+            <label for="femenino">Femenino</label>
+
+            <label for="telefono">Teléfono Celular:</label>
+            <select id="codigoPais" name="codigoPais">
+                <option value="+1">+1 (EE. UU. / Canadá)</option>
+                <option value="+52">+52 (México)</option>
+                
+            </select>
+            <input type="tel" id="telefono" name="telefono" required>
+        
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        
+
+            <label for="curp">Clave Única de Registro de Población (CURP):</label>
+            <input type="text" id="curp" name="curp" pattern="[A-Z0-9]{18}" required>
+            
+            
+                <h1>Información Académica</h1>
+                <label for="modalidadBeca">Modalidad de beca que solicita:</label>
+                <select id="modalidadBeca" name="modalidadBeca">
+                    <option value="aprovechamientoEscolar">Aprovechamiento Escolar</option>
+                    <option value="aprovechamientoAcademicoDestacado">Aprovechamiento Académico Destacado</option>
+                    <option value="apoyoAlumnosMexicanosForaneos">Apoyo a Alumnos Mexicanos Foráneos</option>
+                    <option value="obtencionGradoProfesional">Obtención de Grado Profesional</option>
+                </select>
+                
+                <label for="nivelAcademico">Nivel académico que cursa:</label>
+                <select id="nivelAcademico" name="nivelAcademico">
+                    <option value="iniciacion">Iniciación</option>
+                    <option value="medioSuperior">Medio Superior</option>
+                    <option value="superior">Superior</option>
+                    <option value="exAlumno">Ex-alumna/o</option>
+                    <option value="egresado">Egresada/o</option>
+                </select>
+                
+                <label for="escuela">Escuela:</label>
+                <input type="text" id="escuela" name="escuela">
+                
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula">
+                
+                <label>Formación Artística:</label>
+                <input type="checkbox" id="artesPlasticas" name="formacionArtistica" value="artesPlasticas">
+                <label for="artesPlasticas">Artes Plásticas</label>
+                
+                <input type="checkbox" id="danza" name="formacionArtistica" value="danza">
+                <label for="danza">Danza</label>
+                
+                <input type="checkbox" id="musica" name="formacionArtistica" value="musica">
+                <label for="musica">Música</label>
+                
+                <input type="checkbox" id="teatro" name="formacionArtistica" value="teatro">
+                <label for="teatro">Teatro</label>
+                
+                <input type="checkbox" id="literatura" name="formacionArtistica" value="literatura">
+                <label for="literatura">Literatura</label>
+                
+                <label for="gradoSemestre">Grado o Semestre que cursa:</label>
+                <input type="text" id="gradoSemestre" name="gradoSemestre">
+                
+                <!-- Antecedente Académico -->
+                <label for="promedio">¿Cuál es tu promedio general de calificaciones al concluir del ciclo escolar 2017-2018?:</label>
+                <input type="number" id="promedio" name="promedio">
+            
+    
+            <!-- Información Socioeconómica -->
+            
+                <h1>Información Socioeconómica</h1>
+                
+                <label>1. Especifique las características de su vivienda:</label>
+                
+                <label for="tipoViviendaPropia">1a. Propia:</label>
+                <input type="radio" id="tipoViviendaPropia" name="tipoVivienda" value="propia">
+                
+                <label for="tipoViviendaHipoteca">Hipoteca:</label>
+                <input type="radio" id="tipoViviendaHipoteca" name="tipoVivienda" value="hipoteca">
+                
+                <label for="tipoViviendaRenta">Renta:</label>
+                <input type="radio" id="tipoViviendaRenta" name="tipoVivienda" value="renta">
+                
+                <label for="tipoViviendaPrestada">Prestada:</label>
+                <input type="radio" id="tipoViviendaPrestada" name="tipoVivienda" value="prestada">
+                
+                <label for="ubicacionVivienda">1b. Ubicación de la vivienda:</label>
+                <input type="radio" id="ubicacionViviendaUrbana" name="ubicacionVivienda" value="urbana">
+                <label for="ubicacionViviendaUrbana">Urbana</label>
+                
+                <input type="radio" id="ubicacionViviendaSuburbana" name="ubicacionVivienda" value="suburbana">
+                <label for="ubicacionViviendaSuburbana">Suburbana</label>
+                
+                <input type="radio" id="ubicacionViviendaRural" name="ubicacionVivienda" value="rural">
+                <label for="ubicacionViviendaRural">Rural</label>
+                
+                <label for="serviciosVivienda">2. ¿Su vivienda cuenta con todos los servicios?</label>
+                <input type="radio" id="serviciosViviendaSi" name="serviciosVivienda" value="si">
+                <label for="serviciosViviendaSi">Sí</label>
+                
+                <input type="radio" id="serviciosViviendaNo" name="serviciosVivienda" value="no">
+                <label for="serviciosViviendaNo">No</label>
+                
+                <label for="serviciosFaltantes">En caso de elegir “No”, especifique:</label>
+                <input type="text" id="serviciosFaltantes" name="serviciosFaltantes">
+                
+                <label for="personasEnCasa">3. ¿Con quién vive actualmente?</label>
+                <input type="checkbox" id="viveConPadreMadre" name="personasEnCasa" value="padreMadre">
+                <label for="viveConPadreMadre">Padre y madre</label>
+                
+                <input type="checkbox" id="viveConPadre" name="personasEnCasa" value="padre">
+                <label for="viveConPadre">Padre</label>
+                
+                <input type="checkbox" id="viveConMadre" name="personasEnCasa" value="madre">
+                <label for="viveConMadre">Madre</label>
+                
+                <input type="checkbox" id="viveConHermanos" name="personasEnCasa" value="hermanos">
+                <label for="viveConHermanos">Hermanos</label>
+                
+                <input type="checkbox" id="viveConOtroFamiliar" name="personasEnCasa" value="otroFamiliar">
+                <label for="viveConOtroFamiliar">Otro familiar</label>
+                
+                <input type="checkbox" id="viveConConyugePareja" name="personasEnCasa" value="conyugePareja">
+                <label for="viveConConyugePareja">Cónyuge o pareja</label>
+                
+                <input type="checkbox" id="viveConHijos" name="personasEnCasa" value="hijos">
+                <label for="viveConHijos">Hijos</label>
+                
+                <input type="checkbox" id="viveConSolo" name="personasEnCasa" value="solo">
+                <label for="viveConSolo">Solo</label>
+                
+                <input type="checkbox" id="viveConOtro" name="personasEnCasa" value="otro">
+                <label for="viveConOtro">Otro</label>
+                
+            
+        </form>
+        </section>
+</body>
+</html>

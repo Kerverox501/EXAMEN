@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'REGULAR';
+    src: url('GMX-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'BLACK';
+    src: url('GMX-Black.ttf') format('truetype');
+}
+:root{
+    --primario: #310205;
+    --primarioOscuro: rgb(84, 15, 16);
+    --secundario: #a88644;
+    --blanco: #fff;
+    --negro: #000;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+/*GENERALIDADES--------------------------------------------------------------->*/
+img {
+    max-width: 150px;
+}
+.IMA3{
+    max-width: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+    border: 0.3rem solid var(--secundario);
+}
+/* Establece el fondo de la página en rojo */
+body {
+    background-color: var(--primario);
+    font-family: Arial, sans-serif;
+}
+.NAMES{
+    font-family: 'BLACK';
+    font-size: 2.5rem;
+    color: var(--secundario);
+    text-align: center;
+}
+/*GENERALIDADES--------END---------------------------------------------------->*/
+
+/* Estiliza el encabezado h1 */
+.header {
+    color: var(--blanco); /* Rojo vino */
+    text-align: center;
+    padding: 20px;
+}
+/* Estiliza la tabla */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid var(--secundario); /* Borde dorado */
+}
+/* Estiliza las celdas de la tabla */
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+/* Establece un fondo dorado para las celdas del encabezado de la tabla */
+th {
+    background-color: var(--secundario); /* Dorado */
+    color: #8B0000;
+}
+/* Alterna colores de fondo para filas de la tabla */
+tr:nth-child(even) {
+    background-color: var(--secundario); /* Beige claro */
+}
+
+tr:nth-child(odd) {
+    background-color: var(--primarioOscuro); /* Blanco */
+}
+
+/* Estiliza las imágenes dentro de la tabla */
+.table img.IMA {
+    border: 3px solid white; /* Establece un borde blanco de 3px alrededor de las imágenes */
+    border-radius: 15%;
+    border: 3px solid transparent;
+    border: 0.2rem solid var(--secundario);
+    
+}
+.table img.IMA:hover{
+    border: 0.5rem solid var(--blanco);
+}
+.table img.IMA2 {
+    border: 3px solid var(--blanco); /* Establece un borde blanco de 3px alrededor de las imágenes */
+    border-radius: 15%;
+    border: 3px solid transparent;
+    border: 0.2rem solid var(--primario);
+    
+}
+.table img.IMA2:hover{
+    border: 0.5rem solid var(--blanco);
+}
+
+.table p{
+    font-family: 'REGULAR',Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: var(--blanco);
+}
+
+.cabeza{
+    background-image: url(BANNER.jpg); /* Cambia la URL de la imagen de fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: px;
+    
+    position: relative;
+    margin-bottom: 2rem;
+}
+.banner{
+    background-color: rgba(0, 0, 0, 0.582);
+}
+.cabeza2{
+    background-image: url(BANNER2.jpg); /* Cambia la URL de la imagen de fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.banner2{
+    background-color: rgba(0, 0, 0, 0.582);
+    height: 200px;
+}
+.cabeza2 h1{
+    font-family: 'BLACK','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    color: var(--secundario);
+
+}
+.cabeza h1{
+    font-family: 'BLACK','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    color: var(--secundario);
+
+}
+.header__logo{
+    max-width: 10rem;
+}
+.header__logo2{
+    max-width: 30rem;
+}
+.boton_de_gomita {
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el padding según tus preferencias */
+    background-color: var(--primario); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado de enlace */
+    font-family: 'REGULAR';
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.boton_de_gomita:hover {
+    background-color: var(--secundario); /* Cambia el color de fondo al pasar el mouse */
+    font-family: 'BLACK';
+}
+.BIO{
+    font-family: 'REGULAR';
+    color: var(--blanco);
+    font-size: 1.2rem;
+    border: 1px solid transparent; /* Cuadro invisible con borde transparente */
+    padding: 10px; /* Espaciado interno para el cuadro */
+    text-align: justify; /* Justificación del texto */
+    line-height: 1.5; /* Interlineado*/
+    
+}
+.Mensaje h1{
+    font-family: 'BLACK', ;
+    font-size: 3rem;
+    text-align: right;
+}
+.Mensaje{
+    font-family: 'REGULAR';
+    color: var(--blanco);
+    font-size: 1.3rem;
+    border: 1px solid transparent; /* Cuadro invisible con borde transparente */
+    padding: 10px; /* Espaciado interno para el cuadro */
+    text-align: justify; /* Justificación del texto */
+    line-height: 1.5; /* Interlineado*/
+}
+.Fotmat{
+    color: var(--blanco);
+    font-family: 'REGULAR';
+    font-size: 1.3rem;
+}
+/* Estilos para el contenedor del formulario */
+.Fotmat {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el encabezado del formulario */
+.Fotmat h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para los campos del formulario */
+.Fotmat label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.Fotmat input[type="text"],
+.Fotmat input[type="number"],
+.Fotmat input[type="email"],
+.Fotmat input[type="tel"],
+.Fotmat input[type="text"]:focus,
+.Fotmat input[type="number"]:focus,
+.Fotmat input[type="email"]:focus,
+.Fotmat input[type="tel"]:focus,
+.Fotmat select,
+.Fotmat select:focus {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para los campos de radio */
+.Fotmat input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Estilos para el botón de enviar */
+.Fotmat input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Fotmat input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
